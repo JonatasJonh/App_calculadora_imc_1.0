@@ -11,11 +11,11 @@ const [imc, setImc] = useState(null)
 const [textButton, setTextButton] = useState("Calcular")
 
     function imcCalcular(){
-        return setImc((weight/(height*height)).toFixed(2))
+        return setImc((Weight/(Height*Height)).toFixed(2))
     }
 
     function validationImc(){
-        if(weight != null && height != null){
+        if(Weight != null && Height != null){
             imcCalcular()
             setHeight(null)
             setWeight(null)
